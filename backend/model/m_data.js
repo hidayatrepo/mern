@@ -12,18 +12,23 @@ module.exports.get = async function(body) {
     }
     
     const data = await db.collection("cl_data")
-                      .find(query)
-                      .project({ 
+                    .find(query)
+                    .project({ 
                         nama: 1,
                         nominal: 1,
                         logo: 1,
-                       })
-                      .toArray()
+                    })
+                    // .limit(2)
+                    // .skip(4)
+                    .sort({
+                        nominal: -1,
+                    })
+                    .toArray()
 
     const result = {
         'code'      : '200',
         'result'    : 'true',
-        'message'   : 'Berhasil',
+        'message'   : 'Success',
         'data'      : data,
     }
     return result
