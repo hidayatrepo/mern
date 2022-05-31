@@ -12,5 +12,7 @@ module.exports.get = async function(req, res) {
 
     const result = await model.get(body)
 
+    // const result = 'unch'
+
     response.result(result, res)
 };

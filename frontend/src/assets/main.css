@@ -1,0 +1,101 @@
+.app_color{
+  background-color: #2F7AE5 !important;
+  border:none;
+}
+.margin_top_100{
+  margin-top: 100px;
+}
+.margin_top_200{
+    margin-top: 200px;
+}
+.width_100{
+  width: 100px;
+}
+.height_10{
+  height: 10px;
+}
+.height_100{
+  height: 100px;
+}
+.height_200{
+  height: 200px;
+}
+.cursor_pointer{
+  cursor: pointer;
+}
+.display_table{
+  display: table;
+}
+.display_table_cell{
+  display: table-cell;
+}
+.vertical_align_middle{
+  vertical-align: middle;
+}
+.float_right{
+  float: right;
+}
+
+/* SHIMMER -----------------------------------------------------------------*/
+
+.dropdown-item:active {
+    background:#F92034 !important;
+    color:white !important;
+}
+.br {
+  border-radius: 8px;  
+}
+
+.w80 {
+   width: 80%;
+}
+
+.card-box {
+  border: 2px solid #fff;
+  box-shadow:0px 0px 10px 0 #a9a9a9;
+  padding: 30px 40px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.logo_pic {
+  height: 110px;
+  width: 100%;
+  /*border-radius: 50%;*/
+  border-radius: 10px;
+}
+
+.comment {
+  background: #777;
+  margin-top: 20px;
+}
+
+.animate {
+   animation : shimmer 2s infinite;
+   background: linear-gradient
+   (to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+   background-size: 1000px 100%;
+}
+
+@keyframes fullView {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate {
+   animation : shimmer 2s infinite;
+   background: linear-gradient(to right,#eff1f3 4%,#e2e2e2 25%,#eff1f3 36%);
+   background-size: 1000px 100%;
+}
+
+/* SHIMMER -----------------------------------------------------------------*/
