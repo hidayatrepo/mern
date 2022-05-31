@@ -33,3 +33,24 @@ module.exports.get = async function(body) {
     }
     return result
 }
+
+module.exports.update = async function(body) {
+
+    const where = {
+        _id : body._id
+    }
+    
+    // const data = await db.collection("cl_data")
+    //                 .updateOne(where, {$set : body})
+
+    const data = await db.collection("cl_data").updateOne(
+                       {_id: '6294de2fe837000002002f3a' }, {$set : { nominal : 3500 }})
+
+    const result = {
+        'code'      : '200',
+        'result'    : 'true',
+        'message'   : 'Success updating data',
+        'data'      : data,
+    }
+    return result
+}

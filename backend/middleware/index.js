@@ -16,6 +16,7 @@ router.post('/', item.index);
 router.post('/item/get', item.get);
 
 router.post('/data/get', data.get);
+router.post('/data/update', data.update);
 
 // router.post('/item/get', verification(1), item.get);
 // router.post('/item/add', verification(1), item.add);
