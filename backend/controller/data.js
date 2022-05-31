@@ -7,12 +7,10 @@ const model = require("./../model/m_data");
 module.exports.get = async function(req, res) {
 
     const body = {
-        // nama : req.body.nama,
+        search : req.body.search,
     }
 
     const result = await model.get(body)
-
-    // const result = 'unch'
 
     response.result(result, res)
 };
